@@ -1,8 +1,27 @@
 import React from "react";
+import Trust from "./subcomponents/Trust";
+import { v4 } from "uuid";
 
 const Hero = () => {
+   const trust = [
+      {
+         percent: "100%",
+         text: "Completiton",
+      },
+
+      {
+         percent: "24/7",
+         text: "Delivery",
+      },
+
+      {
+         percent: "100k",
+         text: "Transactions",
+      },
+   ];
+
    return (
-      <div name="hero" className="bg-white">
+      <div name="hero" className="bg-white-200">
          <div className=" max-w-[1240px] mx-auto py-24">
             <div className="flex flex-col text-center w-full mb-20">
                <h1 className="text-2xl md:text-5xl font-bold mb-4 text-gray-900">
@@ -14,20 +33,9 @@ const Hero = () => {
             </div>
 
             <div className="grid lg:grid-cols-3 gap-1 px-2 text-center">
-               <div className="border py-8 rounded-xl shadow-xl">
-                  <p className="text-6xl font-bold text-indigo-600">100%</p>
-                  <p className="mt-2 text-gray-400">Completiton</p>
-               </div>
-
-               <div className="border py-8 rounded-xl shadow-xl">
-                  <p className="text-6xl font-bold text-indigo-600">24/7</p>
-                  <p className="mt-2 text-gray-400">Delivery</p>
-               </div>
-
-               <div className="border py-8 rounded-xl shadow-xl">
-                  <p className="text-6xl font-bold text-indigo-600">100k</p>
-                  <p className="mt-2 text-gray-400">Transactions</p>
-               </div>
+               {trust.map((item) => (
+                  <Trust key={v4()} {...item} />
+               ))}
             </div>
          </div>
       </div>

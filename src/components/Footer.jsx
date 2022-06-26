@@ -6,98 +6,77 @@ import {
    FaTwitter,
    FaTwitch,
 } from "react-icons/fa";
+import ListFooterItem from "./subcomponents/ListFooterItem";
+import { v4 } from "uuid";
+
 const Footer = () => {
-   let url =
-      "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react";
+   const menuItems = [
+      {
+         text: "Marketing",
+         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+         tailwindClass: "py-1 ml-[-5px]",
+      },
+      {
+         text: "Marketing",
+         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+         tailwindClass: "py-1 ml-[-5px]",
+      },
+      {
+         text: "Marketing",
+         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+         tailwindClass: "py-1 ml-[-5px]",
+      },
+      {
+         text: "Marketing",
+         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+         tailwindClass: "py-1 ml-[-5px]",
+      },
+      {
+         text: "Marketing",
+         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
+         tailwindClass: "py-1 ml-[-5px]",
+      },
+   ];
 
    return (
       <div className="w-full mt-24 bg-slate-900 text-gray-300 py-y px-2">
          <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
             <div>
-               <h6 className="font-bold uppercase pt-2">Solutions</h6>
+               <h6 className="font-bold uppercase pt-2 pl-3">Solutions</h6>
 
                <ul>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
+                  {menuItems.map((item) => (
+                     <ListFooterItem key={v4()} {...item} />
+                  ))}
                </ul>
             </div>
 
             <div>
-               <h6 className="font-bold uppercase pt-2">Solutions</h6>
+               <h6 className="font-bold uppercase pt-2 pl-3">Solutions</h6>
 
                <ul>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
+                  {menuItems.map((item) => (
+                     <ListFooterItem key={v4()} {...item} />
+                  ))}
                </ul>
             </div>
 
             <div>
-               <h6 className="font-bold uppercase pt-2">Solutions</h6>
+               <h6 className="font-bold uppercase pt-2 pl-3">Solutions</h6>
 
                <ul>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
+                  {menuItems.map((item) => (
+                     <ListFooterItem key={v4()} {...item} />
+                  ))}
                </ul>
             </div>
 
             <div>
-               <h6 className="font-bold uppercase pt-2">Solutions</h6>
-
+               <h6 className="font-bold uppercase pt-2 pl-3">Solutions</h6>
                <ul>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
-                  <li className="py-1">
-                     <a href={url}>Marketing</a>
-                  </li>
+                  {menuItems.map((item, index) => (
+                     <ListFooterItem key={index} {...item} />
+                  ))}
                </ul>
             </div>
 
@@ -122,7 +101,7 @@ const Footer = () => {
          </div>
 
          <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
-            <p className="py-4">2022 Workflow, LLC. All rights reserved</p>
+            <p className="py-4">2022 Dragos Matteo SRL</p>
             <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
                <FaFacebook className="hover:text-white cursor-pointer " />
                <FaInstagram className="hover:text-white cursor-pointer " />

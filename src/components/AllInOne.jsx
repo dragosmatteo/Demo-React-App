@@ -1,7 +1,11 @@
 import React from "react";
-import { CheckIcon } from "@heroicons/react/outline";
+import AllInOneComp from "./subcomponents/AllInOneComp";
 
 export const AllInOne = () => {
+   const fields = [];
+   for (let i = 1; i <= 12; i++) {
+      fields.push(<AllInOneComp id={i} key={i} />);
+   }
    return (
       <div className="w-full my-24">
          <div className="max-w-[1240px] mx-auto text-black px-2">
@@ -15,117 +19,7 @@ export const AllInOne = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-6">
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
-
-               <div className="flex">
-                  <div>
-                     <CheckIcon className="text-green-600 w-7 mr-4" />
-                  </div>
-                  <div>
-                     <h3 className="font-bold text-lg">Notifications</h3>
-                     <p className="text-lg pt-2 pb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Asperiores maxime deserunt voluptatibus consequatur
-                        similique voluptates!
-                     </p>
-                  </div>
-               </div>
+               {fields}
             </div>
          </div>
       </div>
