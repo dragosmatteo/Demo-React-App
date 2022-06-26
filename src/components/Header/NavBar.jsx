@@ -1,6 +1,6 @@
 import { useState, React } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import ListHeaderItem from "./subcomponents/ListHeaderItem";
+import ListHeaderItem from "./ListHeaderItem";
 import { v4 } from "uuid";
 import { Link } from "react-scroll";
 
@@ -94,7 +94,7 @@ const NavBar = () => {
 
             <div className="lg:hidden" onClick={navClick}>
                {!nav ? (
-                  <MenuIcon className="w-10" />
+                  <MenuIcon className="w-10 " />
                ) : (
                   <XIcon className="w-10" />
                )}

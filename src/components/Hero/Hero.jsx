@@ -1,5 +1,5 @@
 import React from "react";
-import Trust from "./subcomponents/Trust";
+import Trust from "./Trust";
 import { v4 } from "uuid";
 
 const Hero = () => {

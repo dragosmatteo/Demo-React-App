@@ -6,7 +6,7 @@ import {
    FaTwitter,
    FaTwitch,
 } from "react-icons/fa";
-import ListFooterItem from "./subcomponents/ListFooterItem";
+import ListFooterItem from "./ListFooterItem";
 import { v4 } from "uuid";
 
 const Footer = () => {

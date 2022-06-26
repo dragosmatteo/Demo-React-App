@@ -1,5 +1,5 @@
 import React from "react";
-import AllInOneComp from "./subcomponents/AllInOneComp";
+import AllInOneComp from "./AllInOneComp";
 
 export const AllInOne = () => {
    const fields = [];

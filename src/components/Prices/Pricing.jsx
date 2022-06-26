@@ -1,5 +1,5 @@
 import React from "react";
-import Prices from "./subcomponents/Prices";
+import Prices from "./Prices";
 const Pricing = () => {
    return (
       <div name="prices" className="w-full mt-24 mb-20">

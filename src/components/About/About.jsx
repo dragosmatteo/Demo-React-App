@@ -1,7 +1,7 @@
 import React from "react";
 import support from "../assets/support.jpg";
-import AboutText from "./subcomponents/AboutText";
-import { AllInOne } from "./AllInOne";
+import AboutText from "./AboutText";
+import { AllInOne } from "../AllInOne/AllInOne";
 import { v4 } from "uuid";
 
 const About = () => {
