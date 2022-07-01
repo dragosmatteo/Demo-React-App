@@ -1,28 +1,11 @@
 import React from "react";
-import support from "../assets/support.jpg";
+import support from "../../assets/support.jpg";
 import AboutText from "./AboutText";
 import { AllInOne } from "../AllInOne/AllInOne";
 import { v4 } from "uuid";
+import { text } from "../../data";
 
 const About = () => {
-   const text = [
-      {
-         title: "Sales",
-         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus qui sequi vitae a ducimus illum, dolorem rem pariatur dolore! ",
-      },
-      {
-         title: "Sales",
-         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus qui sequi vitae a ducimus illum, dolorem rem pariatur dolore! ",
-      },
-      {
-         title: "Sales",
-         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus qui sequi vitae a ducimus illum, dolorem rem pariatur dolore! ",
-      },
-   ];
-
    return (
       <>
          <div name="about" className="w-full mt-24">

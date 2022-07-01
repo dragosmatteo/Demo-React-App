@@ -8,36 +8,10 @@ import {
 } from "react-icons/fa";
 import ListFooterItem from "./ListFooterItem";
 import { v4 } from "uuid";
+import { menuItems } from "../../data";
+import { motion } from "framer-motion";
 
 const Footer = () => {
-   const menuItems = [
-      {
-         text: "Marketing",
-         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
-         tailwindClass: "py-1 ml-[-5px]",
-      },
-      {
-         text: "Marketing",
-         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
-         tailwindClass: "py-1 ml-[-5px]",
-      },
-      {
-         text: "Marketing",
-         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
-         tailwindClass: "py-1 ml-[-5px]",
-      },
-      {
-         text: "Marketing",
-         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
-         tailwindClass: "py-1 ml-[-5px]",
-      },
-      {
-         text: "Marketing",
-         url: "https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react",
-         tailwindClass: "py-1 ml-[-5px]",
-      },
-   ];
-
    return (
       <div className="w-full mt-24 bg-slate-900 text-gray-300 py-y px-2">
          <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
@@ -95,7 +69,12 @@ const Footer = () => {
                      type="email"
                      placeholder="Enter mail..."
                   />
-                  <button className="p-2 mb-4">subscribe</button>
+                  <motion.button
+                     className="p-2 mb-4"
+                     whileHover={{ scale: 1.1 }}
+                  >
+                     subscribe
+                  </motion.button>
                </form>
             </div>
          </div>

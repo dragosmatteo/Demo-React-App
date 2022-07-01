@@ -1,16 +1,7 @@
 import { React } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-   // const [name, setName] = useState("");
-   // const [email, setEmail] = useState("");
-   // const [text, setText] = useState("");
-
-   // function handlerClick() {
-   //    setName("");
-   //    setEmail("");
-   //    setText("");
-   // }
-
    return (
       <div name="contact" className="w-full mx-auto">
          <div className="max-w-[1240px] mx-auto text-black px-2">
@@ -78,9 +69,12 @@ const Contact = () => {
                         </div>
                      </div>
                      <div className="p-2 w-full">
-                        <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600/70 rounded text-lg">
+                        <motion.button
+                           className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600/70 rounded text-lg"
+                           whileHover={{ scale: 1.1 }}
+                        >
                            Button
-                        </button>
+                        </motion.button>
                      </div>
                   </div>
                </form>
